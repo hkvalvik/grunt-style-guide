@@ -3,11 +3,11 @@ module.exports = function(grunt) {
 
         'style-guide': {
             dist: {
-                src: 'examples/basic/design',
-                dest: 'examples/basic/design.json'
+                src: 'tests',
+                dest: 'tests/design.json'
             }
         }
     });
 
-    grunt.loadNpmTasks('grunt-style-guide');
+    grunt.loadTasks('tasks');
 }

@@ -1,6 +1,6 @@
 'use strict';
 
-var StyleGuide = require('styleguide');
+var StyleGuide = require('style-guide');
 
 module.exports = function(grunt) {
 
