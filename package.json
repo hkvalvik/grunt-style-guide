@@ -1,0 +1,26 @@
+{
+  "name": "grunt-style-guide",
+  "description": "Generates a style guide.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Geta",
+    "url": "http://geta.no/"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "style-guide": "git://github.com/hkvalvik/style-guide.git"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "keywords": [
+    "styleguide"
+  ],
+  "files": [
+    "tasks",
+    "LICENSE-MIT"
+  ]
+}
