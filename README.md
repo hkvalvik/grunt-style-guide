@@ -1,5 +1,9 @@
 # grunt-style-guide (under development)
 
+A Grunt plugin for Geta [style-guide](https://github.com/hkvalvik/style-guide).
+
+Lets you visually compare front-end components with design sketches.
+
 ## Installation
 
     npm install git://github.com/hkvalvik/grunt-style-guide.git --save
