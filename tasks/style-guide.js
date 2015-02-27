@@ -8,8 +8,6 @@ module.exports = function(grunt) {
         var done = this.async();
         var styleGuide = new StyleGuide(this.data.src);
         styleGuide.saveJson(this.data.dest);
-        setTimeout(function () {
-            done();
-        }, 3000)
+        done();
     });
 }
