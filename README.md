@@ -1,6 +1,6 @@
 # grunt-style-guide
 
-## Installation *
+## Installation
 
     npm install git://github.com/hkvalvik/grunt-style-guide.git --save
 
@@ -9,14 +9,23 @@
 ## Example grunt configuration:
 
     module.exports = function(grunt) {
+
         grunt.initConfig({
+
             'style-guide': {
+
                 dist: {
-                    src: 'design', // A directory containing subdirectories with design files
-                    dest: 'style-guide.json' // Where to render design-file json
+
+                    // Point to a directory containing subdirectories with design files:
+                    src: 'design',
+
+                    // Save the generated json at this location.
+                    // It will contain references to all the design files in the src folder.
+                    dest: 'style-guide.json'
                 }
             }
         });
+
         grunt.loadNpmTasks('grunt-style-guide');
     };
 
@@ -28,17 +37,17 @@ Should point to a directory containing design files in jpg, png or gif format.
 
 For example, if you are creating a navigation component and a carousel, the directory structure might look like this:
 
-design
-│
-└───navigation
-    │   small.jpg
-    │   medium.jpg
-    │   large.jpg
+    design
     │
-    └─carousel
-    │   small.jpg
-    │   medium.jpg
-    │   large.jpg
+    └───navigation
+        │   small.jpg
+        │   medium.jpg
+        │   large.jpg
+        │
+        └─carousel
+        │   small.jpg
+        │   medium.jpg
+        │   large.jpg
 
 ## Example client-side configuration:
 
