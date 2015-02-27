@@ -55,6 +55,8 @@ For example, if you are creating a navigation component and a carousel, the dire
         │   large.jpg
         │   giant.jpg
 
+[Another example](https://github.com/hkvalvik/style-guide/tree/master/tests/fixtures)
+
 ### dest
 
 The style guide will generate a json file containing information about the design sketches.
