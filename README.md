@@ -37,7 +37,7 @@ Lets you visually compare front-end components with design sketches.
 
 #### src
 
-Should point to a directory containing design files in jpg, png or gif format.
+Should point to a directory containing design sketches in jpg, png or gif format.
 
 For example, if you are creating a navigation component and a carousel, the directory structure might look like this:
 
@@ -49,16 +49,24 @@ For example, if you are creating a navigation component and a carousel, the dire
         │   large.jpg
         │
         └─carousel
+        │   tiny.jpg
         │   small.jpg
         │   medium.jpg
         │   large.jpg
+        │   giant.jpg
+
+### dest
+
+The style guide will generate a json file containing information about the design sketches.
+
+The dest option let's you specify where to save the json file.
 
 ## Example client-side configuration:
 
     <!-- Include jQuery (not included in this package) -->
     <script src="/jquery.min.js"></script>
 
-    <!-- Include the style guide plugin -->
+    <!-- Include the style-guide plugin -->
     <script src="/node_modules/grunt-style-guide/node_modules/style-guide/client.min.js"></script>
 
     <!-- Include the user interface styles -->
@@ -76,7 +84,7 @@ For example, if you are creating a navigation component and a carousel, the dire
         });
     </script>
 
-To associate an element with a design, use the `data-sg-component` attribute:
+To associate an element with a directory of design sketches, use the `data-sg-component` attribute:
 
     <nav class="navigation" data-sg-component="navigation"> ... </nav>
 
@@ -84,6 +92,12 @@ To associate an element with a design, use the `data-sg-component` attribute:
 
 ![Example of a rendered component](example.jpg "Example of a rendered component")
 
+In the example above, the "navigation", "small", "medium" and "large" labels, as well as the image layer, come from this directory structure:
 
+    navigation
+    │
+    │   small.jpg
+    │   medium.jpg
+    │   large.jpg
 
 
