@@ -10,7 +10,9 @@
     "node": ">= 0.8.0"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "^0.4.5"
+  },
+  "dependencies": {
     "style-guide": "git://github.com/hkvalvik/style-guide.git"
   },
   "peerDependencies": {
