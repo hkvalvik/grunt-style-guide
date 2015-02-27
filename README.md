@@ -4,7 +4,7 @@
 
     npm install git://github.com/hkvalvik/grunt-style-guide.git --save
 
-* The package has not yet published to NPM, hence the url to GitHub.
+* The package has not yet published to NPM, hence the reference to GitHub.
 
 ## Example grunt configuration:
 
@@ -74,9 +74,9 @@ For example, if you are creating a navigation component and a carousel, the dire
 
 To associate an element with a design, use the `data-sg-component` attribute:
 
-<nav class="navigation" data-sg-component="navigation"> ... </nav>
+    <nav class="navigation" data-sg-component="navigation"> ... </nav>
 
-## Example of a rendered style-guide:
+## Example of a rendered style-guide component:
 
 ![Example of a rendered component](example.jpg "Example of a rendered component")
 
