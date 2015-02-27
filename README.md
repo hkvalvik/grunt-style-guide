@@ -1,4 +1,4 @@
-# grunt-style-guide
+# grunt-style-guide (under development)
 
 ## Installation
 
