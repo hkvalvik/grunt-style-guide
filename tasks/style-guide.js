@@ -6,8 +6,8 @@ module.exports = function(grunt) {
 
     grunt.registerMultiTask('style-guide', '', function () {
         var done = this.async();
-        var styleGuide = new StyleGuide(this.data.src);
-        styleGuide.saveJson(this.data.dest);
+        var styleGuide = new StyleGuide(this.data);
+        styleGuide.save(this.data.dest);
         done();
     });
-}
+};

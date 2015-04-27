@@ -75,13 +75,33 @@ The dest option let's you specify where to save the json file.
     <link rel="stylesheet" href="/node_modules/grunt-style-guide/node_modules/style-guide/client.min.css">
 
     <!-- Initialize the plugin. -->
-    <!-- The dataFile option must point to the dest path in the grunt configuration. -->
-    <!-- The imageResolver option is optional; use it if you need to rewrite image paths. -->
     <script>
         $(document).ready(function(){
             new Geta.SG.Main($('body'), {
+
+                // The dataFile option must point to the dest path in the grunt configuration.
                 dataFile: '/style-guide.json',
-                imageResolver: function(path){ return '/' + path; }
+
+                // The imageResolver option is optional; use it if you need to rewrite image paths.
+                imageResolver: function(path){ return '/' + path; },
+
+                // The style guide is ready!
+                ready: function(){
+                    console.log('Ready!');
+                },
+
+                // Convert html before it is injected into an iframe.
+                // Useful for injecting JavaScript into the iframe and initializing JavaScript code.
+                iframeHtml: function(html){
+                    html += '<script src="my-plugin.js"><\/script>';
+                    html += '<script>new MyPlugin()<\/script>';
+                    return html;
+                },
+
+                // Runs when an iframe has loaded.
+                iframeReady: function(){
+                   console.log('Iframe ready!');
+               }
             });
         });
     </script>
